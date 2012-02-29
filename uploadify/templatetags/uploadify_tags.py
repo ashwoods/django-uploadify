@@ -18,9 +18,9 @@ def multi_file_upload(context, upload_complete_url):
     * allBytesLoaded - The total number of bytes uploaded
     * speed - The average speed of all uploaded files
     """
-    return { 
+    return {
         'upload_complete_url' : upload_complete_url,
-        'uploadify_path' : settings.UPLOADIFY_PATH,
+        'uploadify_path' : settings.UPLOADIFY_URL,
         'upload_path' : settings.UPLOADIFY_UPLOAD_PATH,
         'upload_include_js' : settings.UPLOADIFY_INCLUDE_JS,
     }
