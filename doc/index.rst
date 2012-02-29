@@ -19,13 +19,17 @@ Installing django-uploadify
 .. code-block:: python
 
         (r'^uploadify/', include('uploadify.urls')),
+
+
         
 ====================
 Installing Uploadify
 ====================
 
+If using Django +1.3 or staticfiles app you only have to do ``manage.py collectstatic`` to use the bundled uploadify files.
+
         1. Download Uploadify.
-        2. Copy the contents of the Uploadify distribution into your static files diretory (``STATIC_ROOT``/js/uploadify/)
+        2. Copy the contents of the Uploadify distribution into your static files diretory (``STATIC_ROOT``/uploadify/)
         3. Rename the ``jquery.uploadify.vx.x.x.min.js`` file to ``jquery.uploadify.js``
            
 ======================
@@ -90,7 +94,6 @@ Whenever a signal is received, we can have the signal handler create a new insta
 
         
 Finally, the value of ‘upload_complete_url’ sends the users to a view which finds all of the files with new_upload = True. (I’ll leave it up to you to figure out how you want to associate media objects with users).
-
 
 =========
 Reference
