@@ -22,4 +22,5 @@ def multi_file_upload(context, upload_complete_url):
         'upload_complete_url' : upload_complete_url,
         'uploadify_path' : settings.UPLOADIFY_PATH,
         'upload_path' : settings.UPLOADIFY_UPLOAD_PATH,
+        'upload_include_js' : settings.UPLOADIFY_INCLUDE_JS,
     }

@@ -1,5 +1,8 @@
+{% if upload_include_js %}
 <script type="text/javascript" src="{{ uploadify_path }}swfobject.js"></script>
 <script type="text/javascript" src="{{ uploadify_path }}jquery.uploadify.js"></script>
+{% endif %}
+
 <div id="uploadify" class="multi-file-upload"><input id="fileInput" name="fileInput" type="file" /></div>
 <script type="text/javascript">// <![CDATA[
 $(document).ready(function() {
